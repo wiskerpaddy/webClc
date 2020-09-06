@@ -83,62 +83,7 @@
             }else if(x=="09"){
                 x = "9"
             }
-            /*以下verUpで対応します。
-            if(x.indexOf("..")){
-                x = x.replace(/../g, ".")
-            }else if(x=="//"){
-                x = "/"
-            }else if(x=="**"){
-                x = "*"
-            }else if(x=="--"){
-                x = "-"
-            }else if(x=="++"){
-                x = "+"
-            }
-
-            if(x=="0./"){
-                x = "0."
-            }else if(x=="0.*"){
-                x = "0."
-            }else if(x=="0.-"){
-                x = "0."
-            }else if(x=="0.+"){
-                x = "0."
-            }
             
-            if(x=="/*"){
-                x = "/"
-            }else if(x=="/-"){
-                x = "/"
-            }else if(x=="/+"){
-                x = "/*"
-            }
-            */
-            /*
-            if(x=="*"){
-                x = "*"
-            }else if(x=="*-"){
-                x = "*"
-            }else if(x=="*+"){
-                x = "*"
-            }
-
-            if(x=="-/"){
-                x = "-"
-            }else if(x=="-*"){
-                x = "-"
-            }else if(x=="-+"){
-                x = "-"
-            }
-            
-            if(x=="+/"){
-                x = "+"
-            }else if(x=="+*"){
-                x = "+"
-            }else if(x=="+-"){
-                x = "+"
-            }
-            */
             document.querySelector( 'input' ).value = x
         }
     
@@ -152,7 +97,7 @@
                 update(f.toString())
             }catch(_error){
                 //↓を使えばエラーをinputタグに表示
-                //update(_error)
+                update("Error")
             }
         }
     </script>
